@@ -24,9 +24,8 @@ export const loader = async ({ request,params }: Route.LoaderArgs) => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ roomName, participantName }),
     });
-    const {token} = await res.json();
 
-    return token;
+    return await res.json();
 }
 
 export default function Home() {

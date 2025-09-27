@@ -13,7 +13,7 @@ export async function action({request}: ActionFunctionArgs) {
 
         const token = await createToken(roomName, participantName);
 
-        return new Response(JSON.stringify({token}), {status: 201});
+        return new Response(JSON.stringify({token, roomName, participantName}), {status: 201});
     } catch (e: any) {
         return new Response('', {status: 500});
     }
