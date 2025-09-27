@@ -21,7 +21,6 @@ export async function action({request}: ActionFunctionArgs) {
 
 
 async function createToken(roomName: string, participantName: string) {
-    console.log(process.env.LIVEKIT_API_KEY, process.env.LIVEKIT_API_SECRET)
     const at = new AccessToken(process.env.LIVEKIT_API_KEY, process.env.LIVEKIT_API_SECRET, {
         identity: participantName, // Token to expire after 10 minutes
         ttl: '10m',
