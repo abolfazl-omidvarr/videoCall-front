@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    environment:
+      - NODE_ENV=production
+      - LIVEKIT_API_KEY=''
+      - LIVEKIT_API_SECRET=''
+    restart: unless-stopped
