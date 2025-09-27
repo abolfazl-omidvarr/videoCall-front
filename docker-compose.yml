@@ -7,6 +7,6 @@ services:
       - "4000:4000"
     environment:
       - NODE_ENV=production
-      - LIVEKIT_API_KEY=key
-      - LIVEKIT_API_SECRET=secret
+      - LIVEKIT_API_KEY=${KEY}
+      - LIVEKIT_API_SECRET=${SECRET}
     restart: unless-stopped
