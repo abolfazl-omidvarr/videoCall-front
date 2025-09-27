@@ -36,7 +36,7 @@ export async function action({ request }: ActionFunctionArgs) {
     );
   } catch (e: any) {
     return new Response(
-      JSON.stringify({ message: 'Unexpected Server Error' }),
+      JSON.stringify({ message: 'Unexpected Server Error', error: e }),
       { status: 500, headers: { 'Content-Type': 'application/json' } }
     );
   }
