@@ -4,7 +4,7 @@ import {redirect} from "react-router";
 
 export function meta({}: Route.MetaArgs) {
     return [
-        {title: "PSN Video Call"}
+        {title: "PSN Video Call v1.0"},
     ];
 }
 
