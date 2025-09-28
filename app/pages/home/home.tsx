@@ -11,7 +11,7 @@ export default function HomePage() {
     return <div>
         <h1 style={{position:'fixed',zIndex:999, color:'white'}}>v2</h1>
         <div data-lk-theme="default" style={{height: '100vh', backgroundColor: '#f0f0f0'}}>
-            <LiveKitRoom style={{height: '100vh'}} serverUrl='ws://call.psndev.ir:7880/' screen={false}
+            <LiveKitRoom style={{height: '100vh'}} serverUrl='wss://call.psndev.ir/' screen={false}
                          token={data.token}>
                 <VideoConference/>
             </LiveKitRoom>
