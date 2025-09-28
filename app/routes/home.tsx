@@ -19,7 +19,7 @@ export const loader = async ({ request }: Route.LoaderArgs) => {
         return redirect('/invalid-entry');
     }
 
-    const res = await fetch(new URL('http://127.0.0.1:5173/api/getToken'), {
+    const res = await fetch(new URL('http://127.0.0.1:4000/api/getToken'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ roomName, participantName }),
