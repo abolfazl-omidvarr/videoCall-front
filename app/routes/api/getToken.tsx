@@ -55,6 +55,7 @@ async function createToken(roomName: string, participantName: string) {
             ttl: '10m',
         }
     );
+
     at.addGrant({roomJoin: true, room: roomName});
 
     return await at.toJwt();
