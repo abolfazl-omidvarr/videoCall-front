@@ -36,7 +36,7 @@ export default function HomePage() {
     }, [])
 
     return <div>
-        <h1 style={{position: 'fixed', zIndex: 999, color: 'white'}}>v3</h1>
+        <h1 style={{position: 'fixed', zIndex: 999, color: 'white'}}>v5</h1>
         <div data-lk-theme="default" style={{height: '100vh', backgroundColor: '#f0f0f0'}}>
             <LiveKitRoom style={{height: '100vh'}} serverUrl='wss://call.psndev.ir/' screen={false}
                          onDisconnected={handleDisconnect}
