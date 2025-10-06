@@ -52,7 +52,7 @@ async function createToken(roomName: string, participantName: string) {
         process.env.LIVEKIT_API_SECRET,
         {
             identity: participantName,
-            ttl: '10m',
+            ttl: '6h',
         }
     );
 
